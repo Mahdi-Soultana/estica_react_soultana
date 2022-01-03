@@ -29,7 +29,7 @@ function Header({ children }) {
         </article>
         <article>
           <div className="imgContainer">
-            <img src="/resources/home2.jpg" alt="placeholder" />
+            <img src="../../../../resources/home2.jpg" alt="placeholder" />
           </div>
         </article>
       </div>
