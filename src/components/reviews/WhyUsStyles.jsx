@@ -11,14 +11,21 @@ export const WhyUsStyles = styled.section`
     justify-content: space-between;
     align-items: center;
     > article {
-      display: flex;
-      justify-content: baseline;
-      align-items: center;
-      flex-direction: column;
+      width: 340px;
+      height: 380px;
       text-align: center;
-      position: relative;
-      width: 360px;
-      min-height: 255px;
+      img {
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+        background: #4e4e4e;
+        display: inline-block;
+        margin: 1rem auto;
+        border-radius: 50%;
+
+        width: 130px;
+        height: 130px;
+      }
+      background: #ffffff;
+      border-radius: 0px 0px 0px 40px;
       background: ${(p) => p.theme.white};
       box-shadow: -6px 6px 25px rgba(0, 0, 0, 0.15);
       border-radius: 0px 0px 0px 40px;
@@ -26,7 +33,7 @@ export const WhyUsStyles = styled.section`
         ${(p) => p.theme.paragraph};
         padding: 1rem;
         font-family: Open Sans;
-        font-style: normal;
+        font-style: italic;
         font-weight: normal;
         font-size: 1.4rem;
         line-height: 2.5rem;
@@ -38,27 +45,20 @@ export const WhyUsStyles = styled.section`
 
         color: ${(p) => p.theme.lightText};
       }
+      p {
+        margin-top: auto;
+      }
     }
   }
 `;
-export const Icon = styled.span`
-  width: 60px;
-  height: 60px;
-  display: block;
-  position: absolute;
-  background: url(${(p) => p.url || "/resources/whyusicons/Vector.png"})
-      no-repeat center center,
-    linear-gradient(${(p) => p.theme.primary}, ${(p) => p.theme.primary});
-
-  top: -3rem;
-  z-index: 1;
-  left: 3rem;
-  border-radius: 0px 0px 0px 15px;
-`;
 
 export const H3 = styled.h3`
-  ${(p) => p.theme.bigTitle}
-  margin-top:4rem;
+  ${(p) => p.theme.paragraph}
   text-align: left;
-  padding: 1rem 1rem 0rem;
+  margin: auto;
+  margin-top: 1rem;
+  padding: 0rem 4rem 1rem;
+  line-height: 29px;
+  font-style: italic;
+  text-align: center;
 `;

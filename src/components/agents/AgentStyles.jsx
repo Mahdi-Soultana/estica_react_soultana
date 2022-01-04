@@ -53,8 +53,13 @@ export const Agents = styled.article`
   .imgContainer {
     overflow: hidden;
     width: 100%;
+    position: relative;
     height: ${(p) => p.imgHeight || "231.19px"};
-
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
     border-radius: 0px 0px 0px 40px;
   }
 `;

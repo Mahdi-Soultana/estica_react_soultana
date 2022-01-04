@@ -49,7 +49,12 @@ function Partners() {
           <div className="houses">
             <div>
               <div className="imgContainer">
-                <img src={home} alt="" />
+                <img
+                  src={
+                    "https://images.unsplash.com/photo-1576941089067-2de3c901e126?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=978&q=80"
+                  }
+                  alt=""
+                />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
@@ -61,7 +66,12 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src={home} alt="" />
+                <img
+                  src={
+                    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  }
+                  alt=""
+                />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
@@ -73,7 +83,12 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src={home} alt="" />
+                <img
+                  src={
+                    "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  }
+                  alt=""
+                />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
@@ -85,7 +100,12 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src={home} alt="" />
+                <img
+                  src={
+                    "https://images.unsplash.com/photo-1583608205776-bfd35f0d9f83?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                  }
+                  alt=""
+                />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>

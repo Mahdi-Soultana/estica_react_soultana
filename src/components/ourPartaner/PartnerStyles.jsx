@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import src from "./partnerBg.png";
 export const PartnerStyles = styled.section`
   padding: 2rem 1rem;
   position: relative;
   section {
     padding: 3rem 1rem 7rem;
   }
-  background: url("/resources/partnerBg.png") no-repeat center center/cover;
+  background: url(${src}) no-repeat center center/cover;
   #pattern {
     position: absolute;
     top: 0;
