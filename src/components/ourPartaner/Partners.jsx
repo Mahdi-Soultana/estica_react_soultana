@@ -1,4 +1,5 @@
 import React from "react";
+import homeSrc from "/resources/home.jpg";
 import { Houses, PartnerStyles } from "./PartnerStyles";
 import { Paragraph } from "../globlaStyledComponents/globalComponents";
 
@@ -56,7 +57,7 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src="/resources/home.jpg" alt="" />
+                <img src={homeSrc} alt="Home" />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
@@ -68,7 +69,7 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src="/resources/home.jpg" alt="" />
+                <img src={homeSrc} alt="" />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
@@ -80,7 +81,7 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src="/resources/home.jpg" alt="" />
+                <img src={homeSrc} alt="" />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
