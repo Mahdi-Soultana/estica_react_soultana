@@ -1,8 +1,12 @@
 import React from "react";
-import homeSrc from "/resources/home.jpg";
 import { Houses, PartnerStyles } from "./PartnerStyles";
 import { Paragraph } from "../globlaStyledComponents/globalComponents";
-
+import home from "./home.jpg";
+import src1 from "./partnerlogo/1 1.png";
+import src2 from "./partnerlogo/2 1.png";
+import src3 from "./partnerlogo/3 1.png";
+import src4 from "./partnerlogo/4 1.png";
+import src5 from "./partnerlogo/5 1.png";
 function Partners() {
   return (
     <PartnerStyles className="mainContainer">
@@ -17,19 +21,19 @@ function Partners() {
         </article>
         <article className="partner_logo">
           <div>
-            <img src="/resources/partnerlogo/1 1.png" />
+            <img src={src1} />
           </div>
           <div>
-            <img src="/resources/partnerlogo/2 1.png" />
+            <img src={src2} />
           </div>
           <div>
-            <img src="/resources/partnerlogo/3 1.png" />
+            <img src={src3} />
           </div>
           <div>
-            <img src="/resources/partnerlogo/4 1.png" />
+            <img src={src4} />
           </div>
           <div>
-            <img src="/resources/partnerlogo/5 1.png" />
+            <img src={src5} />
           </div>
         </article>
       </section>
@@ -45,7 +49,7 @@ function Partners() {
           <div className="houses">
             <div>
               <div className="imgContainer">
-                <img src="/resources/home.jpg" alt="" />
+                <img src={home} alt="" />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
@@ -57,7 +61,7 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src={homeSrc} alt="Home" />
+                <img src={home} alt="" />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
@@ -69,7 +73,7 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src={homeSrc} alt="" />
+                <img src={home} alt="" />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>
@@ -81,7 +85,7 @@ function Partners() {
             </div>
             <div>
               <div className="imgContainer">
-                <img src={homeSrc} alt="" />
+                <img src={home} alt="" />
               </div>
               <h3>Financial Office, Romania</h3>
               <Paragraph m="1rem">1500 sqft | 03 beds | 05 baths</Paragraph>

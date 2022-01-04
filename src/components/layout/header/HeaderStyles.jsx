@@ -1,9 +1,9 @@
 import styled from "styled-components";
-
+import bgHeder from "./bgHeder.png";
 export const HeaderStyles = styled.header`
-  background: url("/resources/bgHeder.png") no-repeat center center/cover;
+  background: url(${bgHeder}) no-repeat center center/cover;
 
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   > div {
     display: grid;

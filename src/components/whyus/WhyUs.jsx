@@ -1,15 +1,17 @@
 import React from "react";
 import { WhyUsStyles, Icon, H3 } from "./WhyUsStyles";
-import v2Src from "/resources/whyusicons/Vector-1.png";
-import v1Src from "/resources/whyusicons/Vector.png";
-import v3Src from "/resources/whyusicons/Vector-2.png";
+
+import src1 from "./whyusicons/Vector-1.png";
+import src2 from "./whyusicons/Vector.png";
+import src3 from "./whyusicons/Vector-2.png";
+
 function WhyUs() {
   return (
     <WhyUsStyles className="mainContainer">
       <h1>— Why Choose Us?</h1>
       <section className="whyusGrid">
         <article>
-          <Icon url={v3Src}></Icon>
+          <Icon url={src1}></Icon>
           <H3 size="2.4rem" weight="600">
             Professional & Friendly Agents
           </H3>
@@ -20,7 +22,7 @@ function WhyUs() {
           </p>
         </article>
         <article>
-          <Icon url={v1Src}></Icon>
+          <Icon url={src2}></Icon>
           <H3 size="2.4rem" weight="600">
             Buy and Sell Awsome Property
           </H3>
@@ -31,7 +33,7 @@ function WhyUs() {
           </p>
         </article>
         <article>
-          <Icon url={v2Src}></Icon>
+          <Icon url={src3}></Icon>
           <H3 size="2.4rem" weight="600">
             Search Property from Anywhere
           </H3>

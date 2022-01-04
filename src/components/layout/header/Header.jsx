@@ -1,5 +1,5 @@
 import React from "react";
-import homeSrc from "../../../../resources/home2.jpg";
+import Home2 from "./home2.jpg";
 import { HeaderStyles } from "./HeaderStyles";
 import { Paragraph } from "../../globlaStyledComponents/globalComponents";
 
@@ -30,7 +30,7 @@ function Header({ children }) {
         </article>
         <article>
           <div className="imgContainer">
-            <img src={homeSrc} alt="placeholder" />
+            <img src={Home2} alt="placeholder" />
           </div>
         </article>
       </div>

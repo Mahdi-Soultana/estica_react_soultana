@@ -1,12 +1,10 @@
 import React from "react";
-import homeSrc from "/resources/home.jpg";
-
-import twitterSrc from "/resources/social/Vector.png";
-import facebookSrc from "/resources/social/Vector-2.png";
-import instagramSrc from "/resources/social/Vector-3.png";
 import { AgentStyles, H1, Agents, H3, H5 } from "./AgentStyles";
 import { Paragraph } from "../globlaStyledComponents/globalComponents";
-
+import src1 from "./social/Vector.png";
+import src2 from "./social/Vector-1.png";
+import src3 from "./social/Vector-2.png";
+import home from "./home.jpg";
 function Agent() {
   return (
     <AgentStyles>
@@ -15,73 +13,73 @@ function Agent() {
         <Agents imgHeight="300px">
           <div>
             <div className="imgContainer">
-              <img src={homeSrc} alt="" />
+              <img src={home} alt="" />
             </div>
             <H3 size="20px">Mahdi Soultana</H3>
             <H5>18 Properties</H5>
             <div className="social">
               <a href="#">
-                <img src={twitterSrc} alt="twitterSrc" />
+                <img src={src1} alt="facebook" />
               </a>
               <a href="#">
-                <img src={instagramSrc} alt="instagramSrc" />
+                <img src={src2} alt="facebook" />
               </a>
               <a href="#">
-                <img src={facebookSrc} alt="facebook" />
+                <img src={src3} alt="facebook" />
               </a>
             </div>
           </div>
           <div>
             <div className="imgContainer">
-              <img src={homeSrc} alt="" />
+              <img src={home} alt="" />
             </div>
             <H3 size="20px">John Doe</H3>
             <H5>18 Properties</H5>
             <div className="social">
               <a href="#">
-                <img src={twitterSrc} alt="twitterSrc" />
+                <img src={src1} alt="facebook" />
               </a>
               <a href="#">
-                <img src={instagramSrc} alt="instagramSrc" />
+                <img src={src2} alt="facebook" />
               </a>
               <a href="#">
-                <img src={facebookSrc} alt="facebook" />
+                <img src={src3} alt="facebook" />
               </a>
             </div>
           </div>
           <div>
             <div className="imgContainer">
-              <img src={homeSrc} alt="" />
+              <img src={home} alt="" />
             </div>
             <H3 size="20px">Sozi chli</H3>
             <H5>18 Properties</H5>
             <div className="social">
               <a href="#">
-                <img src={twitterSrc} alt="twitterSrc" />
+                <img src={src1} alt="facebook" />
               </a>
               <a href="#">
-                <img src={instagramSrc} alt="instagramSrc" />
+                <img src={src2} alt="facebook" />
               </a>
               <a href="#">
-                <img src={facebookSrc} alt="facebook" />
+                <img src={src3} alt="facebook" />
               </a>
             </div>
           </div>
           <div>
             <div className="imgContainer">
-              <img src={homeSrc} alt="" />
+              <img src={home} alt="" />
             </div>
             <H3 size="20px">Makos Nid</H3>
             <H5>18 Properties</H5>
             <div className="social">
               <a href="#">
-                <img src={twitterSrc} alt="twitterSrc" />
+                <img src={src1} alt="facebook" />
               </a>
               <a href="#">
-                <img src={instagramSrc} alt="instagramSrc" />
+                <img src={src2} alt="facebook" />
               </a>
               <a href="#">
-                <img src={facebookSrc} alt="facebook" />
+                <img src={src3} alt="facebook" />
               </a>
             </div>
           </div>
