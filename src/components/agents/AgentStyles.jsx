@@ -1,7 +1,15 @@
 import styled from "styled-components";
 export const AgentStyles = styled.section`
+  margin-bottom: 5rem;
   width: 100%;
   min-height: 680px;
+  @media (max-width: 950px) {
+    padding: 2rem;
+  }
+
+  @media (max-width: 850px) {
+    padding: 2rem;
+  }
   background: ${(p) => p.theme.lightBlack};
   display: flex;
   justify-content: center;
@@ -39,7 +47,16 @@ export const Agents = styled.article`
   gap: 2rem;
   width: 100%;
 
-  grid-template-columns: repeat(4, minmax(160px, 300px));
+  grid-template-columns: repeat(4, minmax(160px, 280px));
+  @media (max-width: 850px) {
+    grid-template-columns: repeat(3, minmax(160px, 280px));
+  }
+  @media (max-width: 650px) {
+    grid-template-columns: repeat(2, minmax(160px, 280px));
+  }
+  @media (max-width: 450px) {
+    grid-template-columns: repeat(1, minmax(160px, 280px));
+  }
   /* > div {
       background-color: #ffffff;
     } */
@@ -49,7 +66,11 @@ export const Agents = styled.article`
     padding-left: 1rem;
     margin-left: 0rem;
     color: ${(p) => p.theme.white};
+    @media (max-width: 850px) {
+      width: auto;
+    }
   }
+
   .imgContainer {
     overflow: hidden;
     width: 100%;

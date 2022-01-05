@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const WhyUsStyles = styled.section`
-  margin: 5rem auto;
+  margin: 4rem auto;
   @media (max-width: 950px) {
     padding: 2rem;
   }
@@ -19,34 +19,31 @@ export const WhyUsStyles = styled.section`
     flex-wrap: wrap;
     > article {
       margin: 1rem;
-      height: 380px;
-      width: 340px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       text-align: center;
-      img {
-        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-        background: #4e4e4e;
-        display: inline-block;
-        margin: 1rem auto;
-        border-radius: 50%;
-
-        width: 130px;
-        height: 130px;
-      }
-      background: #ffffff;
-      border-radius: 0px 0px 0px 40px;
+      position: relative;
+      width: 262px;
+      min-height: 175px;
       background: ${(p) => p.theme.white};
       box-shadow: -6px 6px 25px rgba(0, 0, 0, 0.15);
       border-radius: 0px 0px 0px 40px;
+      img {
+        width: 50px;
+        height: 50px;
+      }
       p {
         ${(p) => p.theme.paragraph};
         padding: 1rem;
         font-family: Open Sans;
-        font-style: italic;
+        font-style: normal;
         font-weight: normal;
         font-size: 1.4rem;
         line-height: 2.5rem;
         /* or 186% */
-
+        text-transform: uppercase;
         letter-spacing: 0.005em;
 
         /* Light Text */
@@ -55,19 +52,28 @@ export const WhyUsStyles = styled.section`
         @media (max-width: 850px) {
           width: auto;
         }
-        margin-top: auto;
       }
     }
   }
 `;
+export const Icon = styled.span`
+  width: 60px;
+  height: 60px;
+  display: block;
+  position: absolute;
+  background: url(${(p) => p.url || "/resources/whyusicons/Vector.png"})
+      no-repeat center center,
+    linear-gradient(${(p) => p.theme.primary}, ${(p) => p.theme.primary});
+
+  top: -3rem;
+  z-index: 1;
+  left: 3rem;
+  border-radius: 0px 0px 0px 15px;
+`;
 
 export const H3 = styled.h3`
-  ${(p) => p.theme.paragraph}
+  ${(p) => p.theme.bigTitle}
+  line-height: 2.5rem;
   text-align: left;
-  margin: auto;
-  margin-top: 1rem;
-  padding: 0rem 4rem 1rem;
-  line-height: 29px;
-  font-style: italic;
-  text-align: center;
+  padding: 1rem 1rem 0rem;
 `;

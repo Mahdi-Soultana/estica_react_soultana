@@ -1,16 +1,25 @@
 import styled from "styled-components";
 export const WhyUsStyles = styled.section`
   margin: 4rem auto;
+  @media (max-width: 950px) {
+    padding: 2rem;
+  }
   h1 {
     ${(p) => p.theme.bigTitle}
     color:${(p) => p.theme.black};
   }
   .whyusGrid {
-    margin-top: 8rem;
+    margin-top: 4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 850px) {
+      padding: 2rem;
+    }
+    flex-wrap: wrap;
+
     > article {
+      margin: 1rem;
       display: flex;
       justify-content: baseline;
       align-items: center;
@@ -31,7 +40,9 @@ export const WhyUsStyles = styled.section`
         font-size: 1.4rem;
         line-height: 2.5rem;
         /* or 186% */
-
+        @media (max-width: 850px) {
+          width: auto;
+        }
         letter-spacing: 0.005em;
 
         /* Light Text */

@@ -8,6 +8,7 @@ export const DividerStyled = styled.section`
   background-attachment: fixed;
   padding: 3rem;
   color: ;
+  margin: 6rem 0rem;
   display: flex;
   justify-content: space-around;
   align-items: center;

@@ -5,6 +5,7 @@ export const StyledNav = styled.nav`
   left: 0;
   width: 100%;
   background: #ffffff;
+
   > div {
     display: flex;
     justify-content: space-between;
@@ -12,6 +13,7 @@ export const StyledNav = styled.nav`
     flex-wrap: wrap;
     align-content: center;
     justify-items: center;
+
     ul {
       display: flex;
       justify-content: space-between;
@@ -30,6 +32,12 @@ export const StyledNav = styled.nav`
     }
     a {
       ${(p) => p.theme.paragraph}
+    }
+
+    @media (max-width: 850px) {
+      ul {
+        display: none;
+      }
     }
   }
 `;

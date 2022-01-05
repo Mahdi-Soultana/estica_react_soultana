@@ -18,7 +18,11 @@ export const PartnerStyles = styled.section`
   }
   p {
     width: 600px;
+    @media (max-width: 850px) {
+      width: auto;
+    }
   }
+
   .partner_logo {
     display: grid;
     place-content: center;
@@ -48,6 +52,16 @@ export const Houses = styled.section`
     width: 100%;
 
     grid-template-columns: repeat(4, minmax(160px, 280px));
+    @media (max-width: 850px) {
+      grid-template-columns: repeat(3, minmax(160px, 280px));
+    }
+    @media (max-width: 650px) {
+      grid-template-columns: repeat(2, minmax(160px, 280px));
+    }
+    @media (max-width: 450px) {
+      grid-template-columns: repeat(1, minmax(160px, 280px));
+    }
+
     /* > div {
       background-color: #ffffff;
     } */

@@ -2,25 +2,51 @@ import styled from "styled-components";
 import bgHeder from "./bgHeder.png";
 export const HeaderStyles = styled.header`
   background: url(${bgHeder}) no-repeat center center/cover;
+  @media (max-width: 950px) {
+    padding: 2rem;
+  }
 
-  height: 90vh;
+  min-height: 90vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
   width: 100%;
   > div {
     display: grid;
-    grid-template: 1fr / repeat(2, 1fr);
+    grid-template: max-content / repeat(2, 1fr);
     place-items: center;
     place-content: center;
+    align-items: center;
+    justify-content: space-between;
     height: 100%;
     gap: 2rem;
+    article:first-child {
+      width: 80%;
+    }
     @media (max-width: 700px) {
-      margin-top: 27rem;
-      grid-template: 1fr / repeat(1, 1fr);
+      grid-template: max-content / repeat(1, 1fr);
+      article:last-child {
+        padding-top: 7rem;
+      }
+      article:first-child {
+        order: 2;
+        padding: 2rem;
+        form,
+        div {
+          padding: 3rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-direction: column;
+          width: 100%;
+        }
+      }
     }
     article {
       form {
         div {
-          display: flex;
-          justif-content: center;
+          justify-content: space-between;
           align-items: center;
           display: grid;
           grid-template-columns: minmax(max-content, 1fr) max-content;
@@ -35,7 +61,7 @@ export const HeaderStyles = styled.header`
             border: 3px solid ${(p) => p.theme.primary};
             box-sizing: border-box;
             border-radius: 0px 0px 0px 30px;
-            padding: 0.3rem 0.3rem 0.3rem 3rem;
+            padding: 0.25rem 0.25rem 0.25rem 3rem;
             font-size: 2.25rem;
             font-family: inherit;
           }
@@ -48,13 +74,22 @@ export const HeaderStyles = styled.header`
   }
 
   .imgContainer {
-    width: 350px;
-    height: 450px;
+    width: 400px;
+    height: 510px;
+    @media (max-width: 700px) {
+      width: auto;
+    }
     overflow: hidden;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
     border-radius: 0px 0px 0px 5em;
   }
   h1 {
     ${(p) => p.theme.bigText}
+    font-size: 5rem;
+    @media (max-width: 700px) {
+      font-size: 4rem;
+      line-height: 40px;
+      width: 100%;
+    }
   }
 `;

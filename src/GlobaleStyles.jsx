@@ -14,6 +14,7 @@ export const GlobaleStyles = createGlobalStyle`
                 background-color: #fff;
                 -webkit-font-smoothing: antialiased;
                 -moz-osx-font-smoothing: grayscale;
+
             }
             img{
                  width:100%;

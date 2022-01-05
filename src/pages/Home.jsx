@@ -5,6 +5,7 @@ import Partners from "../components/ourPartaner/Partners";
 import WhyUs from "../components/whyus/WhyUs";
 import Reviews from "../components/reviews/Reviews";
 import Divider from "../components/divder/Divider";
+import Question from "../components/question/Question";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       <WhyUs />
       <Divider />
       <Reviews />
+      <Question />
     </Layout>
   );
 }
