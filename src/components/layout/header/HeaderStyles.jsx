@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import bgHeder from "./bgHeder.png";
-export const HeaderStyles = styled.header`
+import { motion } from "framer-motion";
+
+export const HeaderStyles = styled(motion.header)`
   background: url(${bgHeder}) no-repeat center center/cover;
   @media (max-width: 950px) {
     padding: 2rem;

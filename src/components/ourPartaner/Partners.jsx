@@ -1,50 +1,31 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { Houses, PartnerStyles } from "./PartnerStyles";
 import { Paragraph } from "../globlaStyledComponents/globalComponents";
 import home from "./home.jpg";
-import src1 from "./partnerlogo/1 1.png";
-import src2 from "./partnerlogo/2 1.png";
-import src3 from "./partnerlogo/3 1.png";
-import src4 from "./partnerlogo/4 1.png";
-import src5 from "./partnerlogo/5 1.png";
+
+import Text from "./ourPartnerCom/Text";
+import Logos from "./ourPartnerCom/Logos";
+import { InView } from "react-intersection-observer";
+import InViewC from "../Anim/InView";
 function Partners() {
   return (
     <PartnerStyles className="mainContainer">
       <section>
-        <article>
-          <h2>— Our Partners</h2>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
-            purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat
-            tellus.
-          </Paragraph>
-        </article>
-        <article className="partner_logo">
-          <div>
-            <img src={src1} />
-          </div>
-          <div>
-            <img src={src2} />
-          </div>
-          <div>
-            <img src={src3} />
-          </div>
-          <div>
-            <img src={src4} />
-          </div>
-          <div>
-            <img src={src5} />
-          </div>
-        </article>
+        <Text />
+        <Logos />
       </section>
       <Houses size="1.8rem">
         <article>
-          <h2>— Home For Sale</h2>
-          <Paragraph>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
-            purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat
-            tellus.
-          </Paragraph>
+          <InViewC anime={{ opacity: 1 }} hidden={{ opacity: 0 }}>
+            <h2>— Home For Sale</h2>
+
+            <Paragraph>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et
+              purus a odio finibus bibendum in sit amet leo. Mauris feugiat erat
+              tellus.
+            </Paragraph>
+          </InViewC>
 
           <div className="houses">
             <div>
