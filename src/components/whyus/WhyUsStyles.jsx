@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 export const WhyUsStyles = styled.section`
   margin: 4rem auto;
   @media (max-width: 950px) {
@@ -52,7 +53,7 @@ export const WhyUsStyles = styled.section`
     }
   }
 `;
-export const Icon = styled.span`
+export const Icon = styled(motion.span)`
   width: 60px;
   height: 60px;
   display: block;

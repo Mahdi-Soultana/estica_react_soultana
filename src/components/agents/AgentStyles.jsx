@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
+
 export const AgentStyles = styled.section`
   margin-bottom: 5rem;
   width: 100%;
@@ -84,7 +86,7 @@ export const Agents = styled.article`
     border-radius: 0px 0px 0px 40px;
   }
 `;
-export const H1 = styled.h1`
+export const H1 = styled(motion.h1)`
   ${(p) => p.theme.bigTitle};
   color: ${(p) => p.theme.white};
 `;
