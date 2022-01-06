@@ -43,17 +43,19 @@ function InViewC({
     ...hiddenC,
   };
   return (
-    <div>
-      <InView threshold={threshold} triggerOnce={once}>
+    <>
+      <InView threshold={threshold} triggerOnce={false}>
         {({ ref, inView }) => {
           return (
-            <motion.div ref={ref} animate={inView ? show : hidden}>
-              {children}
-            </motion.div>
+            <div ref={ref} style={{ background: "transparent" }}>
+              <motion.div animate={inView ? show : hidden}>
+                {children}
+              </motion.div>
+            </div>
           );
         }}
       </InView>
-    </div>
+    </>
   );
 }
 

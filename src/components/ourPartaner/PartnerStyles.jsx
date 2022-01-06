@@ -27,7 +27,7 @@ export const PartnerStyles = styled.section`
     display: grid;
     place-content: center;
     place-items: center;
-    div {
+    > div {
       padding: 1rem;
       border: 0.6px solid #3333331f;
       border-top-color: transparent;
@@ -38,7 +38,7 @@ export const PartnerStyles = styled.section`
         border-right-color: transparent;
       }
     }
-    grid-template: max-content/repeat(auto-fit, minmax(min-content, 180px));
+    grid-template: max-content/repeat(auto-fit, minmax(120px, 180px));
   }
 
   ///hoouses
