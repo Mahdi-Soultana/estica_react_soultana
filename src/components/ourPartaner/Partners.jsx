@@ -7,7 +7,7 @@ import home from "./home.jpg";
 import Text from "./ourPartnerCom/Text";
 import Logos from "./ourPartnerCom/Logos";
 
-import InViewC from "../Anim/InView";
+import InViewC from "../anim/InView";
 function Partners() {
   return (
     <PartnerStyles className="mainContainer">

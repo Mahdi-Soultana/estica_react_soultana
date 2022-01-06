@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 import { motion } from "framer-motion";
 import { Paragraph } from "../../globlaStyledComponents/globalComponents";
-import InViewC from "../../Anim/InView";
+import InViewC from "../../anim/InView";
 function Text() {
   return (
     <article>
