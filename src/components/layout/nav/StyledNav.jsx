@@ -4,8 +4,9 @@ export const StyledNav = styled.nav`
   top: 0;
   left: 0;
   width: 100%;
-  background: #ffffff;
+  height: 40px;
 
+  z-index: 10;
   > div {
     display: flex;
     justify-content: space-between;

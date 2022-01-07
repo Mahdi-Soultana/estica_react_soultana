@@ -9,8 +9,31 @@ import src5 from "../partnerlogo/5 1.png";
 function Logos() {
   return (
     <motion.article className="partner_logo">
-      {[src1, src2, src3, src4, src5].map((src) => (
-        <InView>
+      {[src1, src2, src3, src4, src5].map((src, i) => (
+        <InView
+          slide="up"
+          threshold={1}
+          anime={{
+            scale: [2.2, 0.5, 1],
+            transition: {
+              delay: i * 0.2,
+              type: "spring",
+              duration: 0.4,
+              damping: 10,
+              times: [0, 0.8, 1],
+            },
+          }}
+          hidden={{
+            scale: [0, 1, 0],
+            times: [0, 0.8, 1],
+            transition: {
+              delay: i * 0.2,
+              type: "spring",
+              duration: 0.1,
+              damping: 10,
+            },
+          }}
+        >
           <img src={src} />
         </InView>
       ))}

@@ -2,7 +2,12 @@ import React from "react";
 import Home2 from "./home2.jpg";
 import { HeaderStyles } from "./HeaderStyles";
 import { Paragraph } from "../../globlaStyledComponents/globalComponents";
-import { motion, useViewportScroll, useTransform } from "framer-motion";
+import {
+  motion,
+  useViewportScroll,
+  useTransform,
+  useSpring,
+} from "framer-motion";
 function Header({ children }) {
   const container = {
     hidden: { opacity: 0 },
@@ -24,7 +29,8 @@ function Header({ children }) {
     hidden: { y: -100, opacity: 0 },
     show: {
       opacity: 1,
-      y: 40,
+      zIndex: 10,
+      y: 90,
       mass: 0.5,
       velocity: 2,
       transition: {
@@ -34,18 +40,14 @@ function Header({ children }) {
     },
   };
   const { scrollY } = useViewportScroll();
-  const y = useTransform(scrollY, [0, 300], [0, 200]);
-  const y2 = useTransform(scrollY, [0, 100, 300], [0, -100, 140]);
+  const y = useTransform(scrollY, [0, 70, 140, 300], [-70, 70, -10, 200]);
+  const y2 = useTransform(scrollY, [0, 100, 300], [-70, -170, 140]);
+
   return (
     <HeaderStyles variants={container} initial="hidden" animate="show">
-      <motion.div
-        variants={navVariant}
-        style={{ position: "absolute", width: "100%" }}
-      >
-        {children}
-      </motion.div>
+      <>{children}</>
       <motion.div variants={navVariant} className="mainContainer">
-        <motion.article style={{ y: y2 }} animate={{ y: 100 }}>
+        <motion.article style={{ y: y2 }} animate={{ y: -70 }}>
           {" "}
           <h1>
             The better way

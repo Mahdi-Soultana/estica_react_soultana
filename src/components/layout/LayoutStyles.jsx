@@ -4,4 +4,5 @@ export const LayoutStyles = styled.div`
   margin: 0 auto;
   background: #ffffff;
   min-height: 100vh;
+  position: relative;
 `;
