@@ -4,6 +4,8 @@ export const GlobaleStyles = createGlobalStyle`
                 box-sizing: border-box;
                 margin: 0;
                 padding: 0;
+                z-index:1;
+                position:relative;
             }
             html{
                 font-size:62.5%;
@@ -63,9 +65,9 @@ export const GlobaleStyles = createGlobalStyle`
                     top:0;
                     left:0;
  svg{
-              fill:#0099ff6f;
+              fill:#0099ff;
      path{
-         fill:#0099ff6f;
+         fill:#0099ff;
      }
  }
                 }
